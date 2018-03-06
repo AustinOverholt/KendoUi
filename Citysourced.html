@@ -31,7 +31,7 @@
   </head>
   <body>
     <!-- Toolbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <a class="navbar-brand" href="#">CS LOGO</a> <!--citysourced logo here-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -87,95 +87,159 @@
   
     
     <!-- Left Sidebar -->
-    <section class="container">
-    </section>
-
-    <!-- Header -->
-    <!-- Report Id... Action Menu-->
-    <section class="container">
-        <div class="row">
-            <h2>Report ID# 99418: Light Pole Damaged or Light Out</h2>
-            <p>Created: 01/28/2014 @ 05:10 PM PST Last Updated: 01/28/2014 @ 05:11 PM PST</p>
-            <button>Action Menu</button>
-        </div>
-    </section>
-
-    <!-- Left Panels -->
-    <!-- Assignment Status
-    Author and Device -->
-    <section class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-header">Assignment and Status</div>
-                    <div class="card-body">Assigned To: Unassigned <hr/> Current Status: Received <br/> Status Last Updated By: Miami Beach, FL </div>
-                </div>
+    <div id="wrapper" class="toggled">
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                            Service Request Details
+                        </a>
+                    </li>
+                    <hr/>
+                    <li>
+                        <a href="#">Private Notes</a>
+                    </li>
+                    <li>
+                        <a href="#">Additional Data</a>
+                    </li>
+                    <li>
+                        <a href="#">Nearby Requests</a>
+                    </li>
+                    <li>
+                        <a href="#">Event Logs</a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-header">Report Details</div>
-                    <div class="card-body">Privacy: Public [ Make Private ] <hr/>  Description: street light is out. Very dark dangerous crossing</div>
-                </div>
-            </div>
-        
-    <!-- Middle Panels -->
-    <!-- Report Details 
-    Integration Details -->
-        
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-header">Author and Device</div>
-                    <div class="card-body"> Susan Lipman <br/>
-                    susan@susanlipman.com <br/>
-                    Tel: Unknown <hr/>
-                    Submitted On: Apple iPhone 4 (CDMA)
+            <!-- /#sidebar-wrapper -->
+    
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <!-- Header -->
+                    <!-- Report Id... Action Menu-->
+                <section class="container">
+                    <div class="row">
+                        <h2>Report ID# 99418: Light Pole Damaged or Light Out</h2>
+                        <p>Created: 01/28/2014 @ 05:10 PM PST Last Updated: 01/28/2014 @ 05:11 PM PST</p>
+                        <button>Action Menu</button>
+                    </div>
+                </section>
+    
+        <!-- Left Panels -->
+        <!-- Assignment Status
+        Author and Device -->
+        <section class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Assignment and Status</div>
+                        <div class="card-body">Assigned To: Unassigned <hr/> Current Status: Received <br/> Status Last Updated By: Miami Beach, FL </div>
                     </div>
                 </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Report Details</div>
+                        <div class="card-body">Privacy: Public [ Make Private ] <hr/>  Description: street light is out. Very dark dangerous crossing</div>
+                    </div>
+                </div>
+            
+        <!-- Middle Panels -->
+        <!-- Report Details 
+        Integration Details -->
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Attachments</div>
+                        <div class="card-body"> <br/>
+                        <p>Picture Here</p>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Author and Device</div>
+                        <div class="card-body"> Susan Lipman <br/>
+                        susan@susanlipman.com <br/>
+                        Tel: Unknown <hr/>
+                        Submitted On: Apple iPhone 4 (CDMA)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Integration Details</div>
+                        <div class="card-body"> WebQa Ticket ID: W016454-012814 <hr/> 
+                            POST Issue GET Update
+                        </div>
+                    </div>
+                </div>   
             </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-header">Integration Details</div>
-                    <div class="card-body"> WebQa Ticket ID: W016454-012814 <hr/> 
-                        POST Issue GET Update
+        </section>
+        <!-- Public comments
+        Input Box (Add Comments) -->
+        <section>
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="card">
+                        <div class="card-header">Public Comments</div>
+                        <div class="card-body"> Miami Beach FL 1/28/2014 @ 05:10 PM PST <br/>
+                        This report has been submitted directly to Miami Beach, FL and assigned ticket id W016454-012814.<hr/>
+                        </div> 
+                        <textarea rows="3"></textarea>
+                        <button>Add Comment</button>
+                    </div>
+                </div>
+        <!-- Location Information -->
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">Location Information</div>
+                        <div class="card-body">
+                        <p>Google maps api here</p>
+                        <hr/>
+                        <p>Nearest Address:</p>
+                        <p>1700 West Avenue, Miami Beach, FL 33139, USA</p>
+                        <hr/>
+                        <p>Coordinates: 25.792816, -80.142609</p>
+                        <p>Compass Heading:</p>
+                        </div>
                     </div>
                 </div>
             </div>   
-        </div>
-    <!-- Bottom Panel -->
-    <!-- Public comments
-    Input Box (Add Comments) -->
-        <div class="row">
-            <div class="card">
-                <div class="card-header">Public Comments</div>
-                <div class="card-body"> Miami Beach FL 1/28/2014 @ 05:10 PM PST <br/>
-                This report has been submitted directly to Miami Beach, FL and assigned ticket id W016454-012814.<hr/> 
-                <div class="form-group">
-                    <textarea rows="3"></textarea>
-                </div> 
-                <button>Add Comment</button>
+        </section>
+    
+     
+    
 
+                    <!-- <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a> -->
                 </div>
             </div>
-        </div>   
-    </section>
-    <!-- Right Panels -->
-    <!-- Attachments 
-    Location Information -->
-    <section>
+            <!-- /#page-content-wrapper -->
+                    
 
-    </section>
-
- 
-
-    <!-- Footer -->
-    <footer>
-
+    
+        </div>
+        <!-- Footer -->
+    <footer class="footer navbar navbar-expand-lg navbar-light bg-light sticky-bottom">
+        <span>Copyright © 2014 Citysourced, Inc. All Rights Reserved</span>
     </footer>
+
+    
 
 
   <!-- Bootstrap Js -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+  </script>
   </body>
 </html>
