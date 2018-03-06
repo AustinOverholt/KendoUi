@@ -1,7 +1,12 @@
-#menu {
+#navbar {
     background: rgba(88, 126, 174, 0.95) !important;
     color: white;
 }
-body {
-    margin: 0;
+.nav-font {
+    color: white !important;
+}
+
+.card-header {
+    color: rgba(88, 126, 174, 0.95) !important;
+    font-weight: 500;
 }
