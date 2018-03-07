@@ -32,12 +32,14 @@
   <body>
     <!-- Toolbar -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <a class="navbar-brand" href="#">CS LOGO</a> <!--citysourced logo here-->
+        <a class="navbar-brand" href="#">
+            <img src="C:\Github\KendoUi\styles\images\CitySourced-Logo-Shield-Shadow-Vector-300x300.png" width="30" height="30" class="img-fluid d-inline-block align-top">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link nav-font" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -75,13 +77,42 @@
                 <a class="nav-link dropdown-toggle nav-font" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="fa fa-search"></span> Search
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-menu" style="padding:17px; width:300px;" aria-labelledby="navbarDropdownMenuLink">
+                    <form>
+                        <div class="form-group row">
+                            <label for="CitysourcedId" class="col-sm-6 col-form-label">Citysourced ID:</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="CitySourcedId">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="VendorId" class="col-sm-6 col-form-label">Vendor ID:</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="VendorId">
+                            </div>
+                            <label for="StreetName" class="col-sm-6 col-form-label">Street Name:</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="StreetName">
+                        </div>
+                        </div>
+                        <button>Search</button>
+                    </form>
                 </div>
             </li>
+
             </ul>
+            <div class="ml-auto">
+                <a class="fas fa-cog fa-lg"></a>
+                <a class="navbar-brand dropdown-toggle nav-font" data-toggle="dropdown" href="#"> 
+                    <img src="C:\Github\KendoUi\styles\images\CitySourced-Logo-Shield-Shadow-Vector-300x300.png" width="30" height="30" class="img-fluid d-inline-block align-top">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <!-- <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a> -->
+                </a>
+            </div>
+            
+            
         </div>
     </nav>
   
@@ -119,9 +150,22 @@
                     <!-- Report Id... Action Menu-->
                 <section class="container">
                     <div class="row">
-                        <h2>Report ID# 99418: Light Pole Damaged or Light Out</h2>
-                        <p>Created: 01/28/2014 @ 05:10 PM PST Last Updated: 01/28/2014 @ 05:11 PM PST</p>
-                        <button>Action Menu</button>
+                        <div class="col-sm-10">
+                            <h2>Report ID# 99418: Light Pole Damaged or Light Out</h2>
+                            <p>Created: 01/28/2014 @ 05:10 PM PST Last Updated: 01/28/2014 @ 05:11 PM PST</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Action Menu
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#"><i class="fa fa-trash"></i> Delete</a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-envelope"></i> Re-Email</a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-file-pdf"></i> Save as PDF</a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-print"></i> Print</a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-cloud"></i> View Public Url</a>
+                            </div>
+                        </div>
                     </div>
                 </section>
     
@@ -149,14 +193,8 @@
                 <div class="col-sm-4">
                     <div class="card">
                         <div class="card-header">Attachments</div>
-                        <div class="card-body"> <br/>
-                        <p>Picture Here</p>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        
+                        <div class="card-body">
+                        <img class="img-fluid img-thumbnail" src="C:\Github\KendoUi\styles\images\alley.jpg">
                         </div>
                     </div>
                 </div>
@@ -190,8 +228,18 @@
                         <div class="card-body"> Miami Beach FL 1/28/2014 @ 05:10 PM PST <br/>
                         This report has been submitted directly to Miami Beach, FL and assigned ticket id W016454-012814.<hr/>
                         </div> 
-                        <textarea rows="3"></textarea>
-                        <button>Add Comment</button>
+                        <form>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group float-right">
+                                <div class="col-sm-12">
+                                    <button>Add Comment</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
         <!-- Location Information -->
@@ -199,7 +247,7 @@
                     <div class="card">
                         <div class="card-header">Location Information</div>
                         <div class="card-body">
-                        <p>Google maps api here</p>
+                        <div id="map"></div>
                         <hr/>
                         <p>Nearest Address:</p>
                         <p>1700 West Avenue, Miami Beach, FL 33139, USA</p>
@@ -225,7 +273,8 @@
         </div>
         <!-- Footer -->
     <footer class="footer navbar navbar-expand-lg navbar-light bg-light sticky-bottom">
-        <span>Copyright © 2014 Citysourced, Inc. All Rights Reserved</span>
+        <span class="ml-auto"><p>Copyright © 2014 Citysourced, Inc. All Rights Reserved</p></span>
+        <span class="mr-auto"><p>Server Name: CS-PRD-WEB01</p></span>
     </footer>
 
     
@@ -241,5 +290,18 @@
         $("#wrapper").toggleClass("toggled");
     });
   </script>
+  <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 25.792816, lng: -80.142609},
+            zoom: 14
+          });
+        }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ-htXGfHRteZDN5V8utWHRJR5TRLTcCs&callback=initMap"
+  async defer></script>
+
+  
   </body>
 </html>
